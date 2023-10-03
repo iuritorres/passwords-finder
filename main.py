@@ -40,7 +40,6 @@ def show_alert(title: str, text: str) -> None:
    screen = tk.Tk()
 
    screen.title(title)
-   # screen.iconphoto(False, tk.PhotoImage(file='.\icon.png'))
    label = tk.Label(
       screen,
       text=text,
