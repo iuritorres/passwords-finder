@@ -40,19 +40,26 @@ def show_alert(title: str, text: str) -> None:
    screen = tk.Tk()
 
    screen.title(title)
-   label = tk.Label(screen, text=text, justify='left', font=('Consolas', 12))
+   # screen.iconphoto(False, tk.PhotoImage(file='.\icon.png'))
+   label = tk.Label(
+      screen,
+      text=text,
+      justify='left',
+      font=('Consolas', 12)
+   )
    label.pack(padx=10, pady=10)
    
    screen.eval('tk::PlaceWindow . center')
    screen.mainloop()
 
 
-data = {profile: profile for profile in get_profiles()}
+data = {profile: get_profile_password(profile) for profile in get_profiles()}
 alert_text = 'Não há nenhuma senha salva no seu computador.'
 
 if __name__ == '__main__':
-   show_alert('Senhas', format_data(data) if any(data) else alert_text)
+   show_alert('Senhas Salvas', format_data(data) if any(data) else alert_text)
 
+   # Change to a build file
    # PyInstaller.__main__.run([
    #    '--name=Passwords Finder',
    #    '--onefile',
