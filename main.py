@@ -1,5 +1,6 @@
 import subprocess
 import tkinter as tk
+import PyInstaller.__main__
 
 
 def format_data(data: dict) -> str:
@@ -47,6 +48,15 @@ def show_alert(title: str, text: str) -> None:
 
 
 data = {profile: profile for profile in get_profiles()}
-
 alert_text = 'Não há nenhuma senha salva no seu computador.'
-show_alert('Senhas', format_data(data) if any(data) else alert_text)
+
+if __name__ == '__main__':
+   show_alert('Senhas', format_data(data) if any(data) else alert_text)
+
+   # PyInstaller.__main__.run([
+   #    '--name=Passwords Finder',
+   #    '--onefile',
+   #    '--noconsole',
+   #    '--icon icon.ico',
+   #    '.\main.py'
+   # ])

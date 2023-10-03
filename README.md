@@ -6,5 +6,5 @@ Docs soon...
 
 _Build Command_:
 ```bash
-pyinstaller .\main.py --onefile -noconsole --name "Passwords Finder" --icon .\icon.ico
+pyinstaller .\main.py --onefile --noconsole --name "Passwords Finder" --icon .\icon.ico
 ```
