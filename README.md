@@ -6,5 +6,5 @@ Docs soon...
 
 _Build Command_:
 ```bash
-pyinstaller .\main.py --onefile --noconsole --name "Passwords Finder" --icon .\icon.ico
+python -m nuitka --standalone --enable-plugin=tk-inter --disable-console --windows-icon-from-ico=".\icon.ico" '.\Passwords Finder.py'
 ```
