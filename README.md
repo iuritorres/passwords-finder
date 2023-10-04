@@ -1,6 +1,6 @@
 # Passwords Finder
 
-Download the finder (<i>Windows</i>): <a href="https://github.com/iuritorres/passwords-finder/tree/50bc0706266cc069b123456a06add4cc112e687c/Passwords%20Finder.dist" download>Download me here!</a>
+Download the finder (<i>Windows</i>): <a href="https://github.com/iuritorres/passwords-finder/raw/main/Passwords%20Finder.dist.rar" download>Download me here!</a>
 
 Docs soon...
 
