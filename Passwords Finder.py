@@ -52,7 +52,7 @@ def show_alert(title: str, text: str) -> None:
 		screen,
 		text=text,
 		justify='left',
-		font=('Consolas', 12)
+		font=('Cascadia Mono', 12)
 	)
 	label.pack(padx=10, pady=10)
 	
